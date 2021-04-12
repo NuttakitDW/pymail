@@ -3,10 +3,10 @@
 ขอบคุณที่สนใจเข้าร่วมกิจกรรมของเรานะครับ
 คุณ${PERSON_NAME} สามารถเข้าร่วมการแข่งขันได้เพียงกรอกโค้ด 
 
-UPBIT2021
+${CODE}
 
-ลงในการแข่งขัน CU Blockchiain Society Trading War ในแอพพลิเคชันของ Roostoo ได้
-และอย่าลืมเข้ากลุ่ม Telegram UPbit x CU Trading War เพื่อพูดคุยกับผู้เข้าร่วมการแข่งคนอื่น ๆ
+ลงในการแข่งขัน UPbit x CU Trading War ในแอพพลิเคชันของ Roostoo ได้
+และอย่าลืมเข้ากลุ่ม Line Open Chat Upbit Thailand เพื่อพูดคุยกับผู้เข้าร่วมการแข่งคนอื่น ๆ
 คลิก >> https://line.me/ti/g2/rkHIZ5tTqwdu4rWM5wqpiQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default
 
 ขอให้สนุกกับการเทรดคริปโตด้วยบัญชีจำลองของเราและโชคดีชนะการแข่งขันในครั้งนี้ครับ :)
