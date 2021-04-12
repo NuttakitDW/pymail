@@ -13,17 +13,19 @@ def get_contacts(filename):
     Return two lists names, emails containing names and email addresses
     read from a file specified by filename.
     """
-    #codes = []
+    codes = []
     names = []
     emails = []
     
     with open(filename, mode='r', encoding='utf-8') as contacts_file:
         for a_contact in contacts_file:
-            #codes.append(a_contact.split()[0])
-            emails.append(a_contact.split()[0])
-            names.append(a_contact.split()[1])
+            codes.append(a_contact.split()[0])
+            emails.append(a_contact.split()[1])
+            names.append(a_contact.split()[2])
             
-    return (names, emails)
+            
+            
+    return (codes, emails, names)
 
 def read_template(filename):
     """
@@ -36,7 +38,7 @@ def read_template(filename):
     return Template(template_file_content)
 
 def main():
-    names, emails = get_contacts('mycontacts.txt') # read contacts
+    codes, emails, names  = get_contacts('mycontacts.txt') # read contacts
     message_template = read_template('message.txt')
 
     # set up the SMTP server
@@ -45,11 +47,11 @@ def main():
     s.login(MY_ADDRESS, PASSWORD)
 
     # For each contact, send the email:
-    for name, email in zip(names, emails):
+    for code, email, name in zip(codes, emails, names):
         msg = MIMEMultipart()       # create a message
 
         # add in the actual person name to the message template
-        message = message_template.substitute(PERSON_NAME=name.title())
+        message = message_template.substitute(PERSON_NAME=name.title(), CODE=code)
 
         # Prints out the message body for our sake
         print(message)
@@ -70,5 +72,5 @@ def main():
     s.quit()
     
 if __name__ == '__main__':
+    print("\n")
     main()
-    
